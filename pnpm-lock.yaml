@@ -4,11 +4,6 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-patchedDependencies:
-  vite-plugin-monaco-editor@1.1.0:
-    hash: ml6vuvpbq2picjecjfyjy32u4e
-    path: patches/vite-plugin-monaco-editor@1.1.0.patch
-
 importers:
 
   .:
@@ -72,7 +67,7 @@ importers:
         version: 1.8.17
       webcrack:
         specifier: workspace:*
-        version: link:../..
+        version: link:../../packages/webcrack
     devDependencies:
       '@types/babel__generator':
         specifier: ^7.6.8
@@ -106,7 +101,7 @@ importers:
         version: 5.2.12(@types/node@20.14.2)
       vite-plugin-monaco-editor:
         specifier: ^1.1.0
-        version: 1.1.0(patch_hash=ml6vuvpbq2picjecjfyjy32u4e)(monaco-editor@0.49.0)
+        version: 1.1.0(monaco-editor@0.49.0)
       vite-plugin-node-polyfills:
         specifier: ^0.22.0
         version: 0.22.0(rollup@4.18.0)(vite@5.2.12(@types/node@20.14.2))
@@ -5505,7 +5500,7 @@ snapshots:
       - supports-color
       - terser
 
-  vite-plugin-monaco-editor@1.1.0(patch_hash=ml6vuvpbq2picjecjfyjy32u4e)(monaco-editor@0.49.0):
+  vite-plugin-monaco-editor@1.1.0(monaco-editor@0.49.0):
     dependencies:
       monaco-editor: 0.49.0
 

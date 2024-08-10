@@ -23,7 +23,6 @@
   "packageManager": "pnpm@9.2.0",
   "pnpm": {
     "patchedDependencies": {
-      "vite-plugin-monaco-editor@1.1.0": "patches/vite-plugin-monaco-editor@1.1.0.patch"
     }
   }
 }
